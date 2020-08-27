@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  font-family: Russo,sans-serif;
+}
+
+nav {
+  background-color: black;
+  padding-top: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+nav .navbar-items {
+  float: right;
+
+}
+
+.logo h3 {
+  color: white;
+  transition: 0.4s;
+  float: left;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-items {
+    display: none;
+  }
+  .logo h3 {
+    transition: 0.4s;
+    font-size: 14px;
+  }
+  #hamburger  {
+    float: right;
+    cursor: pointer;
+  }
+
+  #hamburger .bar1, #hamburger .bar2, #hamburger .bar3{
+    transition: 0.3s;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .change .bar1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2{
+    opacity: 0;
+  }
+
+  .change .bar3{
+    transform: rotate(45deg) translate(-8px,-8px);
+  }
+
+  .navbar-items2 {
+    transition: 0.4s;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    display: block;
+    height: 100%;
+    opacity: 0.95;
+  }
+
+  .navbar-items2 a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+  }
+}
+
+.navbar-items2 {
+  display: none;
+}
